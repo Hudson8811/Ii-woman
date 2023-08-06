@@ -7,12 +7,15 @@ header.header
 			img(src="images/logo-left.svg", alt="alt")
 		.header__center СПЕЦИАЛЬНЫЙ ПРОЕКТ
 		.header__right 
-			img(src="images/logo-right.svg", alt="alt")
+			img(src="images/logo.svg", alt="alt")
 	.header__menu.menu-header
-		.switch-content.switch-content-header
-			.switch-content__container
-				.switch-content-before.switch-content-general
-					.switch-content-general-inner
+		.menu-switch-content
+			input.menu-switcher-content(type='range' min='3' max='97' value='100')
+			.menu-switcher-content-line
+			.menu-switcher-content-button
+			.menu-switch-content__container
+				.menu-switch-content-before.menu-switch-content-general
+					.menu-switch-content-general-inner
 						.menu-header__body 
 							.menu-header__title ЧЕЛОВЕК
 							ul.menu-header__list 
@@ -30,26 +33,41 @@ header.header
 									a.menu-header__link(href="") Голосовой ввод на основе Искусственного интеллекта
 								li.menu-header__item 
 									a.menu-header__link(href="") Робототехника
-				.switch-content-after.switch-content-general 
-					.switch-content-general-inner
+				.menu-switch-content-after.menu-switch-content-general 
+					.menu-switch-content-general-inner
 						.menu-header__body 
 							.menu-header__title ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ
 							ul.menu-header__list 
 								li.menu-header__item 
-									a.menu-header__link(href="") Цифровые двойники
+									a.menu-header__link(href="") социальные координаторы
 								li.menu-header__item 
-									a.menu-header__link(href="") Портативные медицинские  устройства
+									a.menu-header__link(href="") Персональные онкопомощники
 								li.menu-header__item 
-									a.menu-header__link(href="") Система поддержки принятия врачебных решений
+									a.menu-header__link(href="") Администраторы центров госуслуг в медучреждениях
 								li.menu-header__item 
-									a.menu-header__link(href="") Сервисы компьютерного зрения
+									a.menu-header__link(href="") Врачи телемедицинского центра
 								li.menu-header__item 
-									a.menu-header__link(href="") Чат-бот на основе Искусственного интеллекта
+									a.menu-header__link(href="") Четкие алгоритмы работы врачей флагманских центров больниц
 								li.menu-header__item 
-									a.menu-header__link(href="") Голосовой ввод на основе Искусственного интеллекта
+									a.menu-header__link(href="") Сотрудники службы ранней помощи
 								li.menu-header__item 
-									a.menu-header__link(href="") Робототехника
-					
-			input.switcher-content.switcher-content-header(type='range' min='0' max='100' value='100')
-			.switcher-content-line()
-			.switcher-content-button()
+									a.menu-header__link(href="") Специалисты сервиса «Новые возможности»
+
+		.menu-header__socials-wrapper
+			.menu-header__socials.socials
+				a.socials__icon(href="") 
+					img(src="images/socials/1.svg", alt="alt")
+				a.socials__icon(href="") 
+					img(src="images/socials/2.svg", alt="alt")
+				a.socials__icon(href="") 
+					img(src="images/socials/3.svg", alt="alt")
+				a.socials__icon(href="") 
+					img(src="images/socials/4.svg", alt="alt")
+		.menu-header__bottom-wrapper
+			.menu-header__bottom 
+				.menu-header__bottom-left 
+					img(src="images/logo-left.svg", alt="alt")
+				.menu-header__bottom-right 
+					|СПЕЦИАЛЬНЫЙ 
+					br
+					|ПРОЕКТ
