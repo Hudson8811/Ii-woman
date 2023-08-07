@@ -1,4 +1,32 @@
 header.header
+	.popup
+		.popup__container
+			.popup__close
+				<svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" fill="none">
+				<rect x="0.578003" y="0.205078" width="28.8814" height="0.577628" transform="rotate(45 0.578003 0.205078)" fill="white"/>
+				<rect y="20.4219" width="28.8814" height="0.577628" transform="rotate(-45 0 20.4219)" fill="white"/>
+				</svg>
+			.popup__header Над проектом работали:
+			.popup__body 
+				span Редактор: Имя
+				br
+				span Автор: Имя
+				br
+				span Шеф-редактор: Имя
+				br
+				span Редактор: Имя
+				br
+				span Корректор: Имя
+				br
+				span Дизайнер: Имя 
+				br
+				span Директор отдела специальных проектов:
+				br
+				span Имя
+				br
+				span Менеджер проекта: Имя
+			.popup__copyright
+				|© 2023, Shkulev Media Holding / Creative Studio
 	.header__container 
 		.header__burger 
 			span 
@@ -20,49 +48,53 @@ header.header
 							.menu-header__title ЧЕЛОВЕК
 							ul.menu-header__list 
 								li.menu-header__item 
-									a.menu-header__link(href="") Цифровые двойники
+									a.menu-header__link.menu-header__link-man.click(href="#menu-header__link-man1") Цифровые двойники
 								li.menu-header__item 
-									a.menu-header__link(href="") Портативные медицинские  устройства
+									a.menu-header__link.menu-header__link-man.click(href="#menu-header__link-man2") Портативные медицинские  устройства
 								li.menu-header__item 
-									a.menu-header__link(href="") Система поддержки принятия врачебных решений
+									a.menu-header__link.menu-header__link-man.click(href="#menu-header__link-man3") Система поддержки принятия врачебных решений
 								li.menu-header__item 
-									a.menu-header__link(href="") Сервисы компьютерного зрения
+									a.menu-header__link.menu-header__link-man.click(href="#menu-header__link-man4") Сервисы компьютерного зрения
 								li.menu-header__item 
-									a.menu-header__link(href="") Чат-бот на основе Искусственного интеллекта
+									a.menu-header__link.menu-header__link-man.click(href="#menu-header__link-man5") Чат-бот на основе Искусственного интеллекта
 								li.menu-header__item 
-									a.menu-header__link(href="") Голосовой ввод на основе Искусственного интеллекта
+									a.menu-header__link.menu-header__link-man.click(href="#menu-header__link-man6") Голосовой ввод на основе Искусственного интеллекта
 								li.menu-header__item 
-									a.menu-header__link(href="") Робототехника
+									a.menu-header__link.menu-header__link-man.click(href="#menu-header__link-man7") Робототехника
 				.menu-switch-content-after.menu-switch-content-general 
 					.menu-switch-content-general-inner
 						.menu-header__body 
 							.menu-header__title ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ
 							ul.menu-header__list 
 								li.menu-header__item 
-									a.menu-header__link(href="") социальные координаторы
+									a.menu-header__link.menu-header__link-ai.click(href="#menu-header__link-ai1") социальные координаторы
 								li.menu-header__item 
-									a.menu-header__link(href="") Персональные онкопомощники
+									a.menu-header__link.menu-header__link-ai.click(href="#menu-header__link-ai2") Персональные онкопомощники
 								li.menu-header__item 
-									a.menu-header__link(href="") Администраторы центров госуслуг в медучреждениях
+									a.menu-header__link.menu-header__link-ai.click(href="#menu-header__link-ai3") Администраторы центров госуслуг в медучреждениях
 								li.menu-header__item 
-									a.menu-header__link(href="") Врачи телемедицинского центра
+									a.menu-header__link.menu-header__link-ai.click(href="#menu-header__link-ai4") Врачи телемедицинского центра
 								li.menu-header__item 
-									a.menu-header__link(href="") Четкие алгоритмы работы врачей флагманских центров больниц
+									a.menu-header__link.menu-header__link-ai.click(href="#menu-header__link-ai5") Четкие алгоритмы работы врачей флагманских центров больниц
 								li.menu-header__item 
-									a.menu-header__link(href="") Сотрудники службы ранней помощи
+									a.menu-header__link.menu-header__link-ai.click(href="#menu-header__link-ai6") Сотрудники службы ранней помощи
 								li.menu-header__item 
-									a.menu-header__link(href="") Специалисты сервиса «Новые возможности»
+									a.menu-header__link.menu-header__link-ai.click(href="#menu-header__link-ai7") Специалисты сервиса «Новые возможности»
 
 		.menu-header__socials-wrapper
 			.menu-header__socials.socials
 				a.socials__icon(href="") 
 					img(src="images/socials/1.svg", alt="alt")
+					img(src="images/socials/1gragient.svg", alt="alt")
 				a.socials__icon(href="") 
 					img(src="images/socials/2.svg", alt="alt")
+					img(src="images/socials/2gragient.svg", alt="alt")
 				a.socials__icon(href="") 
 					img(src="images/socials/3.svg", alt="alt")
-				a.socials__icon(href="") 
+					img(src="images/socials/3gragient.svg", alt="alt")
+				a.socials__icon.socials__icon-open-popup
 					img(src="images/socials/4.svg", alt="alt")
+					img(src="images/socials/4gragient.svg", alt="alt")
 		.menu-header__bottom-wrapper
 			.menu-header__bottom 
 				.menu-header__bottom-left 

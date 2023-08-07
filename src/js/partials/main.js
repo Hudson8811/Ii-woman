@@ -4,12 +4,52 @@ $(document).ready(function() {
 		$('.menu-header').toggleClass('js-active');
 		$('body').toggleClass('overflow-hidden');
 	})
-	var aivsman_body__title_main_span = $('.aivsman-body__title-main-span');
-	aivsman_body__title_main_span.click(function() {
-		aivsman_body__title_main_span.toggleClass('js-active');
+	$('.socials__icon-open-popup').click(function() {
+		$('.popup').toggleClass('js-active');
+	})
+	$('.popup__close').click(function() {
+		$('.popup').removeClass('js-active');
+	})
+
+
+
+	$('.aivsman-body__title-main-span').click(function() {
+		$('.aivsman-body__title-main-span').toggleClass('js-active');
 		$('.aivsman-switch-content-before').toggleClass('js-active');
 	})
 
+
+	$('.menu-header__link-man').click(function() {
+		$('.aivsman-body__title-main-span').removeClass('js-active');
+		$('.aivsman-switch-content-before').removeClass('js-active');
+		$('.header__burger').removeClass('js-active');
+		$('.menu-header').removeClass('js-active');
+		$('body').removeClass('overflow-hidden');
+	})
+	$('.menu-header__link-ai').click(function() {
+		$('.aivsman-body__title-main-span').addClass('js-active');
+		$('.aivsman-switch-content-before').addClass('js-active');
+		$('.header__burger').removeClass('js-active');
+		$('.menu-header').removeClass('js-active');
+		$('body').removeClass('overflow-hidden');
+	})
+	
+
+
+
+	$('.click').on('click', function() {
+
+		let href = $(this).attr('href');
+
+		$('html, body').animate({
+			scrollTop: $(href).offset().top - $('.aivsman-body__title-main').innerHeight()
+		}, {
+			duration: 700,
+			easing: "linear"
+		});
+
+		return false;
+	});
 
 
 
@@ -94,9 +134,19 @@ if ($(window).innerWidth() > 768) {
 		
 		running_line1.css({"top" : aivsman_body__title_main + aivsman_body_sec_wrapper1H});
 		running_line2.css({"top" : aivsman_body__title_main + running_line + aivsman_body_sec_wrapper1H + aivsman_body_sec_wrapper2H});
+
+
+		$(window).scroll(function() {
+			if ($('.aivsman').offset().top + 100 < $(window).scrollTop()) {
+				$('.aivsman-body__title-main').addClass('js-active');
+				$('.aivsman-switcher').addClass('js-active');
+			}else {
+				$('.aivsman-body__title-main').removeClass('js-active');
+				$('.aivsman-switcher').removeClass('js-active');
+			}
+		})
 	}, 500);
 
-	
 
 
 
