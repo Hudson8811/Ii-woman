@@ -267,15 +267,18 @@
 		}
 	}
 	&__sec {
+		display: flex;
 		.container-inner {
 			display: flex;
 			flex-direction: column;
 			padding: 0 110px;
+			min-height: 100%;
 			@media (max-width: 1920px){
 				padding: 0 5.73vw; 
 			}
 			@media (max-width: 768px){
 				padding: 0 2.63vw; 
+
 			}
 			.myrow {
 				min-height: 100%;
@@ -376,8 +379,8 @@
 				padding: 0 13.54vw;
 			}
 			@media(max-width: 768px) {
-				min-height: 168.95vw;
-				padding: 0 2.63vw;
+				min-height: 180.95vw;
+				padding: 3vw 2.63vw;
 			}
 		}
 	}
@@ -388,7 +391,7 @@
 				min-height: 44.27vw;
 			}
 			@media(max-width: 768px) {
-				min-height: 260.53vw;
+				min-height: 290.53vw;
 			}
 			.myimage {
 
@@ -414,7 +417,7 @@
 				min-height: 41.93vw;
 			}
 			@media (max-width: 768px){
-				min-height: 240.26vw;
+				min-height: 290.26vw;
 			}
 			.myimage {
 
@@ -443,7 +446,7 @@
 			@media(max-width: 768px) {
 				padding: 0 2.63vw;
 	
-				min-height: 239.47vw;
+				min-height: 250vw;
 			}
 			.myrow {
 				column-gap: 50px;
@@ -463,7 +466,7 @@
 				min-height: 48.44vw;
 			}
 			@media(max-width: 768px) {
-				min-height: 294.74vw;
+				min-height: 320.74vw;
 			}
 			.myimage {
 
@@ -487,7 +490,7 @@
 				padding: 0 5.73vw 0;
 			}
 			@media(max-width: 768px) {
-				min-height: 228.95vw;
+				min-height: 260vw;
 				padding: 0 2.63vw;
 			}
 			.myrow {
@@ -509,7 +512,7 @@
 				min-height: 44.01vw;
 			}
 			@media(max-width: 768px) {
-				min-height: 267.11vw;
+				min-height: 290.11vw;
 			}
 			.myimage {
 
@@ -532,7 +535,7 @@
 				min-height: 44.01vw;
 			}
 			@media(max-width: 768px) {
-				min-height: 243.42vw;
+				min-height: 270.42vw;
 			}
 			.myimage {
 
@@ -559,8 +562,8 @@
 				padding: 0 13.54vw;
 			}
 			@media(max-width: 768px) {
-				min-height: 168.95vw;
-				padding: 0 2.63vw;
+				min-height: 180.95vw;
+				padding: 3vw 2.63vw;
 			}
 		}
 	}
@@ -571,7 +574,7 @@
 				min-height: 44.27vw;
 			}
 			@media(max-width: 768px) {
-				min-height: 260.53vw;
+				min-height: 290.53vw;
 			}
 			.myimage {
 
@@ -595,7 +598,7 @@
 
 			}
 			@media (max-width: 768px){
-				min-height: 240.26vw;
+				min-height: 290.26vw;
 			}
 			.myimage {
 
@@ -624,7 +627,7 @@
 			@media(max-width: 768px) {
 				padding: 0 2.63vw;
 	
-				min-height: 239.47vw;
+				min-height: 250vw;
 			}
 			.myrow {
 				column-gap: 50px;
@@ -644,7 +647,7 @@
 				min-height: 48.44vw;
 			}
 			@media(max-width: 768px) {
-				min-height: 294.74vw;
+				min-height: 320.74vw;
 			}
 			.myimage {
 
@@ -670,7 +673,7 @@
 				min-height: 53.65vw;
 			}
 			@media(max-width: 768px) {
-				min-height: 228.95vw;
+				min-height: 260vw;
 				padding: 0 2.63vw;
 			}
 			.myrow {
@@ -692,7 +695,7 @@
 				min-height: 44.01vw;
 			}
 			@media(max-width: 768px) {
-				min-height: 267.11vw;
+				min-height: 290.11vw;
 			}
 			.myimage {
 
@@ -715,7 +718,7 @@
 				min-height: 44.01vw;
 			}
 			@media(max-width: 768px) {
-				min-height: 243.42vw;
+				min-height: 270.42vw;
 			}
 			.myimage {
 
@@ -768,7 +771,13 @@
 }
 .mycol-6 {
 	flex: 0 1 50%;
+	@media (max-width: 768px){
+		flex: 1 1 auto;
+	}
 }
 .myimage {
 	flex: 0 1 50%;
+	@media (max-width: 768px){
+		flex: 1 1 auto;
+	}
 }

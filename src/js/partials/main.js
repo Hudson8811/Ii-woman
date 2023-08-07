@@ -15,58 +15,60 @@ $(document).ready(function() {
 
 
 
-
+if ($(window).innerWidth() > 768) {
+	
 	$(function(){	
 		var column = 0;
-		$('.aivsman-body .aivsman-body__same-height1 .container-inner').each(function(){
+		$('.aivsman-body .aivsman-body__same-height1').each(function(){
 			h = $(this).height();
 			if (h > column) {
 				column = h;
 			}
 		}).height(column);
-		$('.aivsman-body .aivsman-body__same-height2 .container-inner').each(function(){
+		$('.aivsman-body .aivsman-body__same-height2').each(function(){
 			h = $(this).height();
 			if (h > column) {
 				column = h;
 			}
 		}).height(column);
-		$('.aivsman-body .aivsman-body__same-height3 .container-inner').each(function(){
+		$('.aivsman-body .aivsman-body__same-height3').each(function(){
 			h = $(this).height();
 			if (h > column) {
 				column = h;
 			}
 		}).height(column);
-		$('.aivsman-body .aivsman-body__same-height4 .container-inner').each(function(){
+		$('.aivsman-body .aivsman-body__same-height4').each(function(){
 			h = $(this).height();
 			if (h > column) {
 				column = h;
 			}
 		}).height(column);
-		$('.aivsman-body .aivsman-body__same-height5 .container-inner').each(function(){
+		$('.aivsman-body .aivsman-body__same-height5').each(function(){
 			h = $(this).height();
 			if (h > column) {
 				column = h;
 			}
 		}).height(column);
-		$('.aivsman-body .aivsman-body__same-height6 .container-inner').each(function(){
+		$('.aivsman-body .aivsman-body__same-height6').each(function(){
 			h = $(this).height();
 			if (h > column) {
 				column = h;
 			}
 		}).height(column);
-		$('.aivsman-body .aivsman-body__same-height7 .container-inner').each(function(){
+		$('.aivsman-body .aivsman-body__same-height7').each(function(){
 			h = $(this).height();
 			if (h > column) {
 				column = h;
 			}
 		}).height(column);
-		$('.aivsman-body .aivsman-body__same-height8 .container-inner').each(function(){
+		$('.aivsman-body .aivsman-body__same-height8').each(function(){
 			h = $(this).height();
 			if (h > column) {
 				column = h;
 			}
 		}).height(column);
 	});
+}
 
 	setTimeout(function () {
 		var aivsman_switcher = $('.aivsman-switcher').innerHeight();
