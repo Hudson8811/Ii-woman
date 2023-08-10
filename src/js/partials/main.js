@@ -144,10 +144,190 @@ if ($(window).innerWidth() > 768) {
 				$('.aivsman-body__title-main').removeClass('js-active');
 				$('.aivsman-switcher').removeClass('js-active');
 			}
+
+
+
+
+			/* var image_parallax1 = $('.js-image-parallax1');
+			image_parallax1.each(function( index ) {
+				if ($(this).offset().top + 100 < $(window).scrollTop()) {
+					let scrollPosition = $(window).scrollTop();
+					$(this).css({"margin-top" : scrollPosition * -0.1 + 'px'});
+				}
+			});
+			var image_parallax2 = $('.js-image-parallax2');
+			var image_parallax3 = $('.js-image-parallax3');
+			image_parallax2.css({"margin-top" : scrollPosition * -0.11 + 'px'});
+			image_parallax3.css({"margin-top" : scrollPosition * -0.15 + 'px'}); */
 		})
+
+
+		
 	}, 500);
 
 
+
+
+const body__sec2 = gsap.timeline();
+
+body__sec2.fromTo('.aivsman-body__sec2 .js-image-parallax1', 1, {y: 50}, {y:-50}, 0)
+body__sec2.fromTo('.aivsman-body__sec2 .js-image-parallax2', 1, {y: -100}, {y:100}, 0)
+body__sec2.fromTo('.aivsman-body__sec2 .js-image-parallax3', 1, {y: -50}, {y:50}, 0)
+
+ScrollTrigger.create({
+	animation: body__sec2,
+	trigger: '.aivsman-body__sec2',
+	scrub: 2,
+})
+
+
+
+
+const body__sec5 = gsap.timeline();
+
+body__sec5.fromTo('.aivsman-body__sec5 .js-image-parallax1', 1, {y: 50}, {y:-50}, 0)
+body__sec5.fromTo('.aivsman-body__sec5 .js-image-parallax2', 1, {y: -100}, {y:100}, 0)
+body__sec5.fromTo('.aivsman-body__sec5 .js-image-parallax3', 1, {y: -50}, {y:50}, 0)
+
+ScrollTrigger.create({
+	animation: body__sec5,
+	trigger: '.aivsman-body__sec5',
+	scrub: 3,
+})
+
+
+const body__sec6 = gsap.timeline();
+
+body__sec6.fromTo('.aivsman-body__sec6 .js-image-parallax1', 1, {y: 50}, {y:-50}, 0)
+body__sec6.fromTo('.aivsman-body__sec6 .js-image-parallax2', 1, {y: 0}, {y:-100}, 0)
+body__sec6.fromTo('.aivsman-body__sec6 .js-image-parallax3', 1, {y: -50}, {y:50}, 0)
+
+ScrollTrigger.create({
+	animation: body__sec6,
+	trigger: '.aivsman-body__sec6',
+	scrub: 2,
+})
+
+
+const body__sec7 = gsap.timeline();
+
+body__sec7.fromTo('.aivsman-body__sec7 .js-image-parallax1', 1, {y: 50}, {y:-50}, 0)
+body__sec7.fromTo('.aivsman-body__sec7 .js-image-parallax2', 1, {y: -100}, {y:100}, 0)
+body__sec7.fromTo('.aivsman-body__sec7 .js-image-parallax3', 1, {y: -50}, {y:50}, 0)
+
+ScrollTrigger.create({
+	animation: body__sec7,
+	trigger: '.aivsman-body__sec7',
+	scrub: 2,
+})
+const body__sec22 = gsap.timeline();
+
+body__sec22.fromTo('.aivsman-body__sec22 .js-image-parallax1', 1, {y: 50}, {y:-50}, 0)
+body__sec22.fromTo('.aivsman-body__sec22 .js-image-parallax2', 1, {y: -100}, {y:100}, 0)
+body__sec22.fromTo('.aivsman-body__sec22 .js-image-parallax3', 1, {y: -50}, {y:50}, 0)
+
+ScrollTrigger.create({
+	animation: body__sec22,
+	trigger: '.aivsman-body__sec22',
+	scrub: 2,
+})
+
+
+
+
+const body__sec55 = gsap.timeline();
+
+body__sec55.fromTo('.aivsman-body__sec55 .js-image-parallax1', 1, {y: 50}, {y:-50}, 0)
+body__sec55.fromTo('.aivsman-body__sec55 .js-image-parallax2', 1, {y: -100}, {y:100}, 0)
+body__sec55.fromTo('.aivsman-body__sec55 .js-image-parallax3', 1, {y: -50}, {y:50}, 0)
+
+ScrollTrigger.create({
+	animation: body__sec55,
+	trigger: '.aivsman-body__sec55',
+	scrub: 3,
+})
+
+
+const body__sec66 = gsap.timeline();
+
+body__sec66.fromTo('.aivsman-body__sec66 .js-image-parallax1', 1, {y: 50}, {y:-50}, 0)
+body__sec66.fromTo('.aivsman-body__sec66 .js-image-parallax2', 1, {y: 0}, {y:-100}, 0)
+body__sec66.fromTo('.aivsman-body__sec66 .js-image-parallax3', 1, {y: -50}, {y:50}, 0)
+
+ScrollTrigger.create({
+	animation: body__sec66,
+	trigger: '.aivsman-body__sec66',
+	scrub: 2,
+})
+
+
+const body__sec77 = gsap.timeline();
+
+body__sec7.fromTo('.aivsman-body__sec77 .js-image-parallax1', 1, {y: 50}, {y:-50}, 0)
+body__sec7.fromTo('.aivsman-body__sec77 .js-image-parallax2', 1, {y: -100}, {y:100}, 0)
+body__sec7.fromTo('.aivsman-body__sec77 .js-image-parallax3', 1, {y: -50}, {y:50}, 0)
+
+ScrollTrigger.create({
+	animation: body__sec77,
+	trigger: '.aivsman-body__sec77',
+	scrub: 2,
+})
+
+
+/* const body__sec3 = gsap.timeline();
+
+body__sec3.fromTo('.aivsman-body__sec2 .js-image-parallax1', 1, {y: 50}, {y:-50}, 0)
+body__sec3.fromTo('.aivsman-body__sec2 .js-image-parallax2', 1, {y: -100}, {y:100}, 0)
+body__sec3.fromTo('.aivsman-body__sec2 .js-image-parallax3', 1, {y: -50}, {y:50}, 0)
+
+ScrollTrigger.create({
+	animation: body__sec3,
+	trigger: '.aivsman-body__sec3',
+	scrub: 2,
+})
+const body__sec2 = gsap.timeline();
+
+body__sec2.fromTo('.aivsman-body__sec2 .js-image-parallax1', 1, {y: 50}, {y:-50}, 0)
+body__sec2.fromTo('.aivsman-body__sec2 .js-image-parallax2', 1, {y: -100}, {y:100}, 0)
+body__sec2.fromTo('.aivsman-body__sec2 .js-image-parallax3', 1, {y: -50}, {y:50}, 0)
+
+ScrollTrigger.create({
+	animation: body__sec2,
+	trigger: '.aivsman-body__sec2',
+	scrub: 2,
+})
+const body__sec2 = gsap.timeline();
+
+body__sec2.fromTo('.aivsman-body__sec2 .js-image-parallax1', 1, {y: 50}, {y:-50}, 0)
+body__sec2.fromTo('.aivsman-body__sec2 .js-image-parallax2', 1, {y: -100}, {y:100}, 0)
+body__sec2.fromTo('.aivsman-body__sec2 .js-image-parallax3', 1, {y: -50}, {y:50}, 0)
+
+ScrollTrigger.create({
+	animation: body__sec2,
+	trigger: '.aivsman-body__sec2',
+	scrub: 2,
+}) */
+
+
+
+
+
+	/* $(document).on('scroll', function() {
+		$('.js-image-parallax2').each(function(){
+			var wh = $(window).height();
+			var wt = ($(window).scrollTop());
+			var wb = (wh + wt) - 300;
+			var eh = $(this).outerHeight();
+			var et = $(this).offset().top;
+			var eb = (eh + et);
+			if ((eb >= wt) && (et <= wb)){
+				$(this).parent().addClass('js-active');
+				$(this).css({"margin-top" : wt * (1 / 100) + 'px'});
+			} else {
+				console.log('2');
+			}
+		})
+	}); */
 
 
 
