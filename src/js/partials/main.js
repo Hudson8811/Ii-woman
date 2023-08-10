@@ -264,7 +264,7 @@ ScrollTrigger.create({
 const body__sec77 = gsap.timeline();
 
 body__sec7.fromTo('.aivsman-body__sec77 .js-image-parallax1', 1, {y: 50}, {y:-50}, 0)
-body__sec7.fromTo('.aivsman-body__sec77 .js-image-parallax2', 1, {y: -100}, {y:100}, 0)
+body__sec7.fromTo('.aivsman-body__sec77 .js-image-parallax2', 1, {y: 100}, {y:-100}, 0)
 body__sec7.fromTo('.aivsman-body__sec77 .js-image-parallax3', 1, {y: -50}, {y:50}, 0)
 
 ScrollTrigger.create({
