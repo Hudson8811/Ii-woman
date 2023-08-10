@@ -168,6 +168,23 @@ if ($(window).innerWidth() > 768) {
 
 
 
+
+const hero_images = gsap.timeline();
+
+hero_images.fromTo('.hero__image-parallax1', 1, {y: -50, transform: 'scale(1)'}, {y:50, transform: 'scale(1)'}, 0)
+hero_images.fromTo('.hero__image-parallax2', 1, {y: -50, transform: 'scale(0.7)'}, {y:50, transform: 'scale(1.3)'}, 0)
+hero_images.fromTo('.hero__image-parallax3', 1, {y: 150, transform: 'scale(0.7)'}, {y:-50, transform: 'scale(1.3)'}, 0)
+hero_images.fromTo('.hero__image-parallax4', 1, {y: 50}, {y:-50}, 0)
+
+ScrollTrigger.create({
+	animation: hero_images,
+	trigger: '.hero',
+	scrub: 2,
+})
+
+
+
+
 const body__sec2 = gsap.timeline();
 
 body__sec2.fromTo('.aivsman-body__sec2 .js-image-parallax1', 1, {y: 50}, {y:-50}, 0)
@@ -272,6 +289,10 @@ ScrollTrigger.create({
 	trigger: '.aivsman-body__sec77',
 	scrub: 2,
 })
+
+
+
+
 
 
 /* const body__sec3 = gsap.timeline();
