@@ -47,7 +47,7 @@
 	position: sticky;
 	top: 0;
 	left: 0;
-	z-index: 14;
+	z-index: 15;
 	transition: all 0.7s ease 0s;
 	&.js-active {
 		transform: translate(0, -25%);
@@ -177,6 +177,34 @@
 		@media (max-width: 768px){
 			margin-top: 0!important;
 		}
+		&-titles {
+			position: sticky;
+			top: 0;
+			z-index: 14;
+			transition: all 0.7s ease 0s;
+			&.js-active {
+				background: #1A1A1A;
+				transform: translate(0, -114px);
+				@media (max-width: 1920px){
+					transform: translate(0, -5.94vw);
+				}
+				@media (max-width: 768px){
+					transform: translate(0, 0);
+				}
+				.aivsman-body__title-main-inner {
+					transform: translate(0, 57px);
+					@media (max-width: 1920px){
+						transform: translate(0, 2.97vw);
+					}
+					@media (max-width: 768px){
+						transform: translate(0, 0);
+					}
+				}
+				.aivsman-body__title-main {
+					background: none;
+				}
+			}
+		}
 	}
 }
 
@@ -233,8 +261,6 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			position: sticky;
-			top: 0;
 			min-height: 259px;
 			background: url('../images/aivsman/lines-title.svg') -25px -5px / calc(100% + 50px) calc(100% + 10px) no-repeat;
 			color: var(--white, #FFF);
@@ -251,58 +277,24 @@
 			border-top: none;
 			background-color: #1A1A1A;
 			transition: all 0.7s ease 0s;
+			flex: 1 1 100%;
+			width: 1520px;
+			@media (max-width: 1920px){
+			}
 			@media (max-width: 1920px){
 				min-height: 13.49vw;
 				background: url('../images/aivsman/lines-title.svg') -1.30vw -0.26vw / calc(100% + 2.60vw) calc(100% + 0.52vw) no-repeat;
 				background-color: #1A1A1A;
 				font-size: 2.60vw;
 				border: 0.05vw solid #737373;
+				width: 79.17vw;
 			}
-			&::before{
-				content:'Перемещайте слайдер, чтобы увидеть разницу между человеком и искусственным интеллектом';
-				position: absolute;
-				top: 5%;
-				left: 50%;
-				width: 80%;
-				transform: translate(-50%, 0);
-				color: var(--white, #FFF);
-				font-family: Fira Sans;
-				font-size: 22px;
-				font-style: normal;
-				font-weight: 400;
-				line-height: 150%; /* 33px */
-				@media (max-width: 1920px){
-					font-size: 1.15vw;
-				}
-				@media (max-width: 768px){
-					display: none;
-				}
+			@media (max-width: 768px){
+				width: calc(100vw - (2.63vw * 2));
 			}
-			&.js-active {
-				background: #1A1A1A;
-				transform: translate(0, -114px);
-				@media (max-width: 1920px){
-					transform: translate(0, -5.94vw);
-				}
-				@media (max-width: 768px){
-					transform: translate(0, 0);
-				}
-				.aivsman-body__title-main-inner {
-					transform: translate(0, 57px);
-					@media (max-width: 1920px){
-						transform: translate(0, 2.97vw);
-					}
-					@media (max-width: 768px){
-						transform: translate(0, 0);
-					}
-				}
-			}
-
+			
 			&-inner {
 				transition: all 0.7s ease 0s;
-				position: sticky;
-				z-index: 2;
-				top: 0;
 				width: 525px;
 				height: 145px;
 				display: flex;
@@ -310,6 +302,7 @@
 				align-items: center;
 				text-align: center;
 				border: 0.5px solid #737373;
+				position: relative;
 				@media (max-width: 1920px){
 					width: 27.34vw;
 					height: 7.55vw;
@@ -323,6 +316,27 @@
 					align-items: center;
 					text-align: left;
 					border: none;
+				}
+				&::before{
+					content:'Перемещайте слайдер, чтобы увидеть разницу между человеком и искусственным интеллектом';
+					position: absolute;
+					top: -30%;
+					left: 50%;
+					width: 1520px;
+					transform: translate(-50%, 0);
+					color: var(--white, #FFF);
+					font-family: Fira Sans;
+					font-size: 22px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: 150%; /* 33px */
+					@media (max-width: 1920px){
+						font-size: 1.15vw;
+						width: 79.17vw;
+					}
+					@media (max-width: 768px){
+						display: none;
+					}
 				}
 			}
 			&-span-wrap {

@@ -112,7 +112,7 @@ if ($(window).innerWidth() > 768) {
 
 	setTimeout(function () {
 		var aivsman_switcher = $('.aivsman-switcher').innerHeight();
-		$(".aivsman-switch-content__container").css({"margin-top" : -aivsman_switcher})
+		$(".aivsman-switch-content__container-wrapper").css({"margin-top" : -aivsman_switcher})
 		
 		
 		var running_line = $('.aivsman-body__running-line').innerHeight();
@@ -138,10 +138,10 @@ if ($(window).innerWidth() > 768) {
 
 		$(window).scroll(function() {
 			if ($('.aivsman').offset().top + 100 < $(window).scrollTop()) {
-				$('.aivsman-body__title-main').addClass('js-active');
+				$('.aivsman-switch-content__container-titles').addClass('js-active');
 				$('.aivsman-switcher').addClass('js-active');
 			}else {
-				$('.aivsman-body__title-main').removeClass('js-active');
+				$('.aivsman-switch-content__container-titles').removeClass('js-active');
 				$('.aivsman-switcher').removeClass('js-active');
 			}
 
