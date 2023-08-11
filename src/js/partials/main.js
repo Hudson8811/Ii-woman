@@ -216,13 +216,13 @@ ScrollTrigger.create({
 const body__sec6 = gsap.timeline();
 
 body__sec6.fromTo('.aivsman-body__sec6 .js-image-parallax1', 1, {y: 50}, {y:-50}, 0)
-body__sec6.fromTo('.aivsman-body__sec6 .js-image-parallax2', 1, {y: 0}, {y:-100}, 0)
+body__sec6.fromTo('.aivsman-body__sec6 .js-image-parallax2', 1, {y: 50}, {y:-50}, 0)
 body__sec6.fromTo('.aivsman-body__sec6 .js-image-parallax3', 1, {y: -50}, {y:50}, 0)
 
 ScrollTrigger.create({
 	animation: body__sec6,
 	trigger: '.aivsman-body__sec6',
-	scrub: 2,
+	scrub: 1,
 })
 
 
@@ -268,13 +268,13 @@ ScrollTrigger.create({
 const body__sec66 = gsap.timeline();
 
 body__sec66.fromTo('.aivsman-body__sec66 .js-image-parallax1', 1, {y: 50}, {y:-50}, 0)
-body__sec66.fromTo('.aivsman-body__sec66 .js-image-parallax2', 1, {y: 0}, {y:-100}, 0)
+body__sec66.fromTo('.aivsman-body__sec66 .js-image-parallax2', 1, {y: 50}, {y:-50}, 0)
 body__sec66.fromTo('.aivsman-body__sec66 .js-image-parallax3', 1, {y: -50}, {y:50}, 0)
 
 ScrollTrigger.create({
 	animation: body__sec66,
 	trigger: '.aivsman-body__sec66',
-	scrub: 2,
+	scrub: 1,
 })
 
 
