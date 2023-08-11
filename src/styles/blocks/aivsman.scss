@@ -177,11 +177,19 @@
 		@media (max-width: 768px){
 			margin-top: 0!important;
 		}
+		&-wrapper {
+			@media (max-width: 768px){
+				margin-top: 0!important;
+			}
+		}
 		&-titles {
 			position: sticky;
 			top: 0;
 			z-index: 14;
 			transition: all 0.7s ease 0s;
+			@media (max-width: 768px){
+				z-index: 999;
+			}
 			&.js-active {
 				background: #1A1A1A;
 				transform: translate(0, -114px);
