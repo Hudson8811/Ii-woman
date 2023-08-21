@@ -13,11 +13,11 @@
 	position: absolute;
 	inset: 0;
 	width: var(--position);
-	background-color: #1A1A1A;
+	background: url('../images/noise.png'), #1A1A1A 0 0 / 100% 100% no-repeat;
 	overflow: hidden;
 }
 .switch-content-after {
-	background-color: #1A1A1A;
+	background: url('../images/noise.png'), #1A1A1A 0 0 / 100% 100% no-repeat;
 }
 
 .switcher-content {

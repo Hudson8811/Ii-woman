@@ -2,7 +2,7 @@
 .menu-header {
 	overflow: hidden;
 	overflow-y: scroll;
-	background-color: #1A1A1A;
+	background: url('../images/noise.png'), #1A1A1A 0 0 / 100% 100% no-repeat;
 	position: fixed;
 	z-index: 999;
 	top: -110%;
@@ -164,7 +164,7 @@
 	z-index: 99;
 	inset: 0;
 	width: var(--position);
-	background-color: #1A1A1A;
+	background: url('../images/noise.png'), #1A1A1A 0 0 / 100% 100% no-repeat;
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
@@ -173,7 +173,7 @@
 	}
 }
 .menu-switch-content-after {
-	background-color: #1A1A1A;
+	background: url('../images/noise.png'), #1A1A1A 0 0 / 100% 100% no-repeat;
 }
 
 .menu-switcher-content {

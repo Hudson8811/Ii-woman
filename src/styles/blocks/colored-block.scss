@@ -1,5 +1,5 @@
 .colored-block {
-	background-color: #1A1A1A;
+	background: url('../images/noise.png'), #1A1A1A 0 0 / 100% 100% no-repeat;
 	&__body {
 		padding: 150px 110px 150px;
 		background: var(--gradient, linear-gradient(91deg, #56C0E5 0%, #B977E6 49.48%, #E55C5E 100%));

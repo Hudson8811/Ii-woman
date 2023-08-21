@@ -2,9 +2,7 @@
 	position: relative;
 	&::before{
 		content:'';
-		
 	}
-	background: url('../images/hero/circle.svg') 60% 60% / 268px 268px no-repeat;
 	&__top {
 		.container-inner {
 			position: relative;
@@ -29,6 +27,7 @@
 		font-weight: 400;
 		line-height: 105%;
 		letter-spacing: 2px;
+		opacity: 1!important;
 		@media (max-width: 1920px){
 			max-width: 48.44vw;
 			font-size: 5.21vw;
@@ -41,6 +40,7 @@
 			letter-spacing: 0.10vw;
 		}
 		span {
+			display: block;
 			&:first-child{
 				display: flex;
 				align-items: center;
@@ -69,9 +69,36 @@
 				}
 			}
 		}
+		&-outer {
+			overflow: hidden;
+			&:nth-child(1){
+				.hero__title-inner {
+					
+					transition: all 1s ease 0.4s;
+				}
+			}
+			&:nth-child(2){
+				.hero__title-inner {
+					transition: all 1s ease 0.5s;
+				}
+			}
+		}
+		&-inner {
+			transform: translate(-5%, 200%) rotate(10deg);
+		}
+		&.el-shown {
+			span {
+				transform: translate(0, 0);
+			}
+		}
+
+	}
+	&__main-image {
+		transition: all 1s ease 1.2s;
 	}
 	&__image {
-		position: absolute;
+		position: absolute;/* 
+		transition: all 1s ease 1.2s; */
 		@media (max-width: 768px){
 			width: 100%;
 		}
@@ -160,6 +187,7 @@
 	&__text {
 		margin-top: 10px;
 		max-width: 800px;
+		transition: all 1s ease 0.6s;
 		@media (max-width: 1920px){
 			max-width: 41.67vw;
 			margin-top: 2.6vw;
@@ -170,12 +198,13 @@
 		}
 	}
 	&__socials {
-		position: absolute;
+		position: fixed;
+		z-index: 999;
 		top: 50%;
-		left: -70px;
-		transform: translate(-100%, -50%);
+		left: 70px;
+		transform: translate(0%, -50%);
 		@media (max-width: 1920px){
-			left: -3.65vw;
+			left: 3.65vw;
 		}
 		@media (max-width: 768px){
 			display: none;

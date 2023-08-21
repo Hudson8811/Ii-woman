@@ -1,4 +1,4 @@
-header.header
+header#header.header
 	.popup
 		.popup__container
 			.popup__close
@@ -12,24 +12,33 @@ header.header
 				br
 				span Автор: Анастасия Гладкова
 				br
-				span Корректор: Светлана Игнатова
+				span Арт-директор: Мария Простякова
 				br
-				span Дизайн: Мария Простякова, Михеева Екатерина, Владимирова Алина 
+				span Дизайн: Екатерина Михеева, Алина Владимирова
 				br
-				span Директор отдела специальных проектов: Елена Прокофьева
+				span Директор отдела специальных проектов: Алёна Прокофьева
 				br
-				span Менеджер проекта: Петрухина Анна
+				span Менеджер проекта: Анна Петрухина
+				br
+				span Корректор: Анна Биглер
+				br
+				span Разработка: Денис Осипов, Александр Камионский
+				br
+
+
 			.popup__copyright
 				|© 2023, Shkulev Media Holding / Creative Studio
 	.header__container 
 		.header__burger 
 			span 
 			span 
-		.header__left 
-			img(src="images/logo-left.svg", alt="alt")
-		.header__center СПЕЦИАЛЬНЫЙ ПРОЕКТ
-		.header__right 
-			img(src="images/logo.svg", alt="alt")
+		.header__left.el-hidden  
+			a(href="https://mosurbanforum.ru/?ysclid=llakba0lqc67891416") 
+				img(src="images/logo-left.svg", alt="alt")
+		.header__center.el-hidden  СПЕЦИАЛЬНЫЙ ПРОЕКТ
+		.header__right.el-hidden  
+			a(href="https://www.vokrugsveta.ru/?ysclid=llakbuds6g989345597") 
+				img(src="images/logo.svg", alt="alt")
 	.header__menu.menu-header
 		.menu-switch-content
 			input.menu-switcher-content(type='range' min='3' max='97' value='100')
@@ -74,19 +83,18 @@ header.header
 									a.menu-header__link.menu-header__link-ai.click(href="#menu-header__link-ai6") Сотрудники службы ранней помощи
 								li.menu-header__item 
 									a.menu-header__link.menu-header__link-ai.click(href="#menu-header__link-ai7") Специалисты сервиса «Новые возможности»
-
 		.menu-header__socials-wrapper
 			.menu-header__socials.socials
-				a.socials__icon(href="") 
+				.socials__icon.vk
 					img(src="images/socials/1.svg", alt="alt")
 					img(src="images/socials/1gragient.svg", alt="alt")
-				a.socials__icon(href="") 
+				.socials__icon.ok
 					img(src="images/socials/2.svg", alt="alt")
 					img(src="images/socials/2gragient.svg", alt="alt")
-				a.socials__icon(href="") 
+				.socials__icon.tg
 					img(src="images/socials/3.svg", alt="alt")
 					img(src="images/socials/3gragient.svg", alt="alt")
-				a.socials__icon.socials__icon-open-popup
+				.socials__icon.socials__icon-open-popup
 					img(src="images/socials/4.svg", alt="alt")
 					img(src="images/socials/4gragient.svg", alt="alt")
 		.menu-header__bottom-wrapper
